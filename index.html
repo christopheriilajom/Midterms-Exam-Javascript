@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/1024/Calculator_5122x.png">
+
+    <link rel="stylesheet" href="index.css">
     <script src="test.js"></script>
-    <!-- <script>
-        
-            
-        function submit(){
-            var first = parseInt(document.getElementById("firstNum").value);
-            var second = parseInt(document.getElementById("secondNum").value);
-            var third = parseInt(document.getElementById("thirdNum").value);
-            var result = '';
+    <title>3 Values Multiplier</title>
 
-            for (var i = first; i<=second; i++){
-                var product = i*third;
-                result += `${i} * ${third} = ${product} <br>`;
-            }
-            console.log(typeof(first));
-            document.getElementById("inputType").innerHTML = result;
-        }
-
-    </script> -->
-
-    <title>Document</title>
 </head>
 <body id="inputType">
-    <input type="number" id="firstNum"/>
-    <input type="number" id="secondNum"/>
-    <input type="number" id="thirdNum"/>
-    <button onclick="submit()">Click me</button>
-    <br>
+    <div class="title">
+        <h1>3 Values Multiplier</h1>
+        <div id="listContainer">
+            <ul>
+                <li><input type="number" id="firstNum"/></li>
+                <li><input type="number" id="secondNum"/></li>
+                <li><input type="number" id="thirdNum"/></li>
+            </ul>
+        </div>     
+        <button onclick="submit()" id="clickme">Click me</button>
+    </div>   
+    
 </body>
 </html>
