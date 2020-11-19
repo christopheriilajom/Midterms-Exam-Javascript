@@ -6,17 +6,18 @@
     <script src="test.js"></script>
     <!-- <script>
         
-        
+            
         function submit(){
-            var first = document.getElementById("firstNum").value;
-            var second = document.getElementById("secondNum").value;
-            var third = document.getElementById("thirdNum").value;
+            var first = parseInt(document.getElementById("firstNum").value);
+            var second = parseInt(document.getElementById("secondNum").value);
+            var third = parseInt(document.getElementById("thirdNum").value);
             var result = '';
 
             for (var i = first; i<=second; i++){
-                var product = i * third;
+                var product = i*third;
                 result += `${i} * ${third} = ${product} <br>`;
             }
+            console.log(typeof(first));
             document.getElementById("inputType").innerHTML = result;
         }
 
@@ -25,9 +26,9 @@
     <title>Document</title>
 </head>
 <body id="inputType">
-    <input type="text" id="firstNum"/>
-    <input type="text" id="secondNum"/>
-    <input type="text" id="thirdNum"/>
+    <input type="number" id="firstNum"/>
+    <input type="number" id="secondNum"/>
+    <input type="number" id="thirdNum"/>
     <button onclick="submit()">Click me</button>
     <br>
 </body>
